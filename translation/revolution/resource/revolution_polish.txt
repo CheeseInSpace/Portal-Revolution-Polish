@@ -30,7 +30,7 @@
 "Revolution_Chapter_5_Subheading" "Podłoga krojowni"
 "Revolution_Chapter_6_Subheading" "Wspinaczka"
 "Revolution_Chapter_7_Subheading" "Kolizja"
-"Revolution_Chapter_8_Subheading" "Zdalna egzekucjan"
+"Revolution_Chapter_8_Subheading" "Zdalna egzekucja"
 
 "Revolution_Developer_Commentary" "Komentarz dewelopera"
 "Revolution_Enable_Developer_Commentary" "Włącz Komentarz deweloperski"

@@ -86,7 +86,7 @@
 "Revolution_Dialog_Popup_Footer" "Dystrybutor rozwiązań impasu gałęzi historii użytkownika"
 "Revolution_Dialog_ChapterThumbnail_Footer" "Grafika orientacyjna ponownego wejścia obiektu testowego. Nie rozpowszechniać."
 "Revolution_Dialog_LoadingScreen_Header" "Ładowanie..."
-"Revolution_Dialog_LoadingScreen_Display1" "Proszę zachować spokój."
+"Revolution_Dialog_LoadingScreen_Display1" "Zachowaj spokój."
 "Revolution_Dialog_LoadingScreen_Display2" "To interaktywne doświadczenie jest obecnie:"
 "Revolution_Dialog_LoadingScreen_Footer" "Interaktywny ekran ładowania (c) Aperture Science 1998"
 "Revolution_Dialog_Settings_Footer" "Środowisko konfiguracji środowiska graficznego"

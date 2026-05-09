@@ -72,10 +72,10 @@ Po skopiowaniu drzewo plików w katalogu gry powinno zawierać m.in.:
 
 ## Twórcy
 
-- **Menu / interfejs** — Odlotowy_ser
-- **Korekta** — DeBondor, enderek, kyoshuske
+- **Menu / interfejs** — AbbieInSpace
+- **Korekta** — DeBondor, enderek, kyoshuske, AbbieInSpace
 - **Napisy, rozdziały 1–4** — kyoshuske
-- **Napisy, rozdziały 5–8** — Odlotowy_ser
+- **Napisy, rozdziały 5–8** — AbbieInSpace
 - **Napisy, epilog** — DeBondor
 
 ---

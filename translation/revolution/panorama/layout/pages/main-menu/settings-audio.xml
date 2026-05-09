@@ -1,0 +1,141 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/main.scss" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/scripts/pages/settings-audio.js" />
+    </scripts>
+
+    <Panel useglobalcontext="true" class="settings__page">
+
+        <BaseAudioSettings class="settings__page-body" childfocusonhover="true">
+
+            <Label text="#Settings_Audio_T_Volume" class="settings__page-group-title"/>
+            <Panel class="settings__page-group">
+
+                <ChaosSettingsSlider id="SettingsAudio_VolumeMaster"
+                                     text="#Settings_Audio_VolumeMaster"
+                                     class="settings__page-group-item"
+                                     min="0" max="1" percentage="true"
+                                     increment="0.01"
+                                     convar="volume"
+                                     selectionpos="auto" tabindex="auto"
+                                     onmoveup="$.DispatchEvent('SettingsFocusNavbar')"/>
+
+                <ChaosSettingsSlider id="SettingsAudio_VolumeMusic"
+                                     text="#Settings_Audio_VolumeMusic"
+                                     class="settings__page-group-item"
+                                     min="0" max="1" percentage="true"
+                                     increment="0.01"
+                                     convar="snd_volume_music"
+                                     selectionpos="auto" tabindex="auto"/>
+                                     
+                <ChaosSettingsSlider id="Settings_Audio_MuteInBackground"
+                                     class="settings__page-group-item"
+                                     text="#Settings_Audio_BackgroundVolume"
+                                     min="0" max="1" percentage="true"
+                                     increment="0.1"
+                                     convar="snd_mute_losefocus"
+                                     onmovedown="$('#Settings_Audio_Subtitles').SetFocus()"
+                                     selectionpos="auto" tabindex="auto"/>
+
+            </Panel>
+
+            <Label text="#Settings_Audio_T_Setup" class="settings__page-group-title"/>
+            <Panel class="settings__page-group">
+
+                <ChaosSettingsEnumDropDown id="DeviceConfigurationEnum"
+                                           class="settings__page-group-item"
+                                           text="#Settings_Audio_DeviceConfig"
+                                           convar="sound_device_override"
+                                           oninputsubmit="BaseAudioDeviceConfigurationChanged()"
+                                           onmoveup="$('#Settings_Audio_MuteInBackground').SetFocus()"
+                                           selectionpos="auto" tabindex="auto">
+                    <!--placeholder labels that will be modified in csgo_audiosettingsscreen.cpp-->
+                    <Label text="XXXXXX 1" id="audiodeviceconfig1"/>
+                    <Label text="XXXXXX 2" id="audiodeviceconfig2"/>
+                    <Label text="XXXXXX 3" id="audiodeviceconfig3"/>
+                    <Label text="XXXXXX 4" id="audiodeviceconfig4"/>
+                    <Label text="XXXXXX 5" id="audiodeviceconfig5"/>
+                    <Label text="XXXXXX 6" id="audiodeviceconfig6"/>
+                    <Label text="XXXXXX 7" id="audiodeviceconfig7"/>
+                    <Label text="XXXXXX 8" id="audiodeviceconfig8"/>
+                    <Label text="XXXXXX 9" id="audiodeviceconfig9"/>
+                    <Label text="XXXXXX 10" id="audiodeviceconfig10"/>
+                    <Label text="XXXXXX 11" id="audiodeviceconfig11"/>
+                    <Label text="XXXXXX 12" id="audiodeviceconfig12"/>
+                    <Label text="XXXXXX 13" id="audiodeviceconfig13"/>
+                    <Label text="XXXXXX 14" id="audiodeviceconfig14"/>
+                    <Label text="XXXXXX 15" id="audiodeviceconfig15"/>
+                    <Label text="XXXXXX 16" id="audiodeviceconfig16"/>
+                    <Label text="XXXXXX 17" id="audiodeviceconfig17"/>
+                    <Label text="XXXXXX 18" id="audiodeviceconfig18"/>
+                    <Label text="XXXXXX 19" id="audiodeviceconfig19"/>
+                    <Label text="XXXXXX 20" id="audiodeviceconfig20"/>
+                </ChaosSettingsEnumDropDown>
+
+                <ChaosSettingsEnumDropDown id="SpeakerConfigurationEnum"
+                                           class="settings__page-group-item"
+                                           text="#Settings_Audio_SpeakerConfig"
+                                           convar="snd_surround_speakers"
+                                           onmovedown="$('#Settings_Audio_Subtitles').SetFocus()"
+                                           oninputsubmit="BaseSpeakerConfigurationChanged()"
+                                           selectionpos="auto" tabindex="auto">
+                    <Label text="#Settings_Audio_SpeakerConfig_Unset" id="speakerconfig0" value="-1"/>
+                    <Label text="#Settings_Audio_SpeakerConfig_Headphones" id="speakerconfig1" value="0"/>
+                    <Label text="#Settings_Audio_SpeakerConfig_Speakers_2" id="speakerconfig2" value="2"/>
+                    <Label text="#Settings_Audio_SpeakerConfig_Speakers_4" id="speakerconfig3" value="4"/>
+                    <Label text="#Settings_Audio_SpeakerConfig_Speakers_51" id="speakerconfig4" value="5"/>
+                </ChaosSettingsEnumDropDown>
+
+            </Panel>
+
+            <Label text="#Settings_Audio_T_Subtitles" class="settings__page-group-title"/>
+            <Panel class="settings__page-group">
+
+                <Panel class="action settings__page-group-item">
+                    <Label text="#Settings_Audio_Subtitles"/>
+                    <DropDown id="Settings_Audio_Subtitles"
+                              class="dropdown"
+                              menuclass="dropdown-menu"
+                              onmoveup="$('#SpeakerConfigurationEnum').SetFocus()"
+                              onmovedown="$('#Settings_Audio_SubtitleLanguage').SetFocus()"
+                              oninputsubmit="SettingsAudio.onChangeSubtitles()"
+                              selectionpos="auto" tabindex="auto">
+                        <Label text="#Settings_Audio_Subtitles_Off" value="0" id="Settings_Audio_Subtitles_0" />
+                        <Label text="#Settings_Audio_Subtitles_Dialogue" value="1" id="Settings_Audio_Subtitles_1" />
+                        <Label text="#Settings_Audio_Subtitles_Full" value="2" id="Settings_Audio_Subtitles_2" />
+                    </DropDown>
+                </Panel>
+
+                <ChaosSettingsEnumDropDown id="Settings_Audio_SubtitleLanguage"
+                                           class="settings__page-group-item"
+                                           text="#Settings_Audio_SubtitleLanguage"
+                                           convar="cc_lang"
+                                           onmoveup="$('#Settings_Audio_Subtitles').SetFocus()"
+                                           onmovedown="$.DispatchEvent('FocusBackButton', $('#Settings_Audio_SubtitleLanguage'))"
+                                           selectionpos="auto" tabindex="auto">
+                    <Label text="#Lang_UI" id="lang_ui" value=""/>
+                    <Label text="#Lang_English" id="lang_english" value="english"/>
+                    <Label text="#Lang_German" id="lang_german" value="german"/>
+                    <Label text="#Lang_French" id="lang_french" value="french"/>
+                    <Label text="#Lang_Spanish" id="lang_spanish" value="spanish"/>
+                    <Label text="#Lang_Latam" id="lang_latam" value="latam"/>
+                    <Label text="#Lang_Turkish" id="lang_turkish" value="turkish"/>
+                    <Label text="#Lang_Brazilian" id="lang_brazilian" value="brazilian"/>
+                    <Label text="#Lang_Russian" id="lang_russian" value="russian"/>
+                    <Label text="#Lang_Ukrainian" id="lang_ukrainian" value="ukrainian"/>
+                    <Label text="Polski" id="lang_polish" value="polish"/>
+                    <Label text="#Lang_SimplifiedChinese" id="lang_schinese" value="schinese"/>
+                    <Label text="#Lang_TraditionalChinese" id="lang_tchinese" value="tchinese"/>
+                </ChaosSettingsEnumDropDown>
+
+
+            </Panel>
+
+        </BaseAudioSettings>
+
+    </Panel>
+
+</root>

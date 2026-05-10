@@ -1,4 +1,4 @@
-# Portal: Revolution — polskie tłumaczenie
+# Portal: Revolution - polskie tłumaczenie
 
 Nieoficjalne polskie tłumaczenie gry **Portal: Revolution**
 
@@ -72,11 +72,11 @@ Po skopiowaniu drzewo plików w katalogu gry powinno zawierać m.in.:
 
 ## Twórcy
 
-- **Menu / interfejs** — Odlotowy_ser
-- **Korekta** — DeBondor, enderek, kyoshuske
-- **Napisy, rozdziały 1–4** — kyoshuske
-- **Napisy, rozdziały 5–8** — Odlotowy_ser
-- **Napisy, epilog** — DeBondor
+- **Menu / interfejs:** Odlotowy_ser
+- **Korekta:** DeBondor, enderek, kyoshuske
+- **Napisy, rozdziały 1-4:** kyoshuske
+- **Napisy, rozdziały 5-8:** Odlotowy_ser
+- **Napisy, epilog:** DeBondor
 
 ---
 

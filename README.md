@@ -82,4 +82,4 @@ Po skopiowaniu drzewo plików w katalogu gry powinno zawierać m.in.:
 
 ## Uwaga dla deweloperów modu
 
-Modyfikacja jakichkolwiek plików `subtitles_*.txt` lub `closecaption_*.txt` wymaga rekompilacji odpowiedniego pliku `.dat`. Najprostszy sposób — gotowy [skrypt batch](https://gist.github.com/kyoshuske/4b7c3e92f2293bf2eb731ee399482057) (autor: kyoshuske).
+Modyfikacja jakichkolwiek plików `subtitles_*.txt` lub `closecaption_*.txt` wymaga rekompilacji odpowiedniego pliku `.dat`. Najprostszy sposób: gotowy [skrypt batch](https://gist.github.com/kyoshuske/4b7c3e92f2293bf2eb731ee399482057) (autor: kyoshuske).

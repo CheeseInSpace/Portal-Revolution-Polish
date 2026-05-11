@@ -126,7 +126,7 @@
                     <Label text="#Lang_Brazilian" id="lang_brazilian" value="brazilian"/>
                     <Label text="#Lang_Russian" id="lang_russian" value="russian"/>
                     <Label text="#Lang_Ukrainian" id="lang_ukrainian" value="ukrainian"/>
-                    <Label text="#Lang_Polish" id="lang_polish" value="polish"/>
+                    <Label text="Polski" id="lang_polish" value="polish"/>
                     <Label text="#Lang_SimplifiedChinese" id="lang_schinese" value="schinese"/>
                     <Label text="#Lang_TraditionalChinese" id="lang_tchinese" value="tchinese"/>
                 </ChaosSettingsEnumDropDown>

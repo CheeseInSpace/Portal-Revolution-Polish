@@ -1,4 +1,4 @@
-# Portal: Revolution — polskie tłumaczenie
+# Portal: Revolution - polskie tłumaczenie
 
 Nieoficjalne polskie tłumaczenie gry **Portal: Revolution**
 
@@ -72,14 +72,14 @@ Po skopiowaniu drzewo plików w katalogu gry powinno zawierać m.in.:
 
 ## Twórcy
 
-- **Menu / interfejs** — Odlotowy_ser
-- **Korekta** — DeBondor, enderek, kyoshuske
-- **Napisy, rozdziały 1–4** — kyoshuske
-- **Napisy, rozdziały 5–8** — Odlotowy_ser
-- **Napisy, epilog** — DeBondor
+- **Menu / interfejs:** Odlotowy_ser
+- **Korekta:** DeBondor, enderek, kyoshuske
+- **Napisy, rozdziały 1-4:** kyoshuske
+- **Napisy, rozdziały 5-8:** Odlotowy_ser
+- **Napisy, epilog:** DeBondor
 
 ---
 
 ## Uwaga dla deweloperów modu
 
-Modyfikacja jakichkolwiek plików `subtitles_*.txt` lub `closecaption_*.txt` wymaga rekompilacji odpowiedniego pliku `.dat`. Najprostszy sposób — gotowy [skrypt batch](https://gist.github.com/kyoshuske/4b7c3e92f2293bf2eb731ee399482057) (autor: kyoshuske).
+Modyfikacja jakichkolwiek plików `subtitles_*.txt` lub `closecaption_*.txt` wymaga rekompilacji odpowiedniego pliku `.dat`. Najprostszy sposób: gotowy [skrypt batch](https://gist.github.com/kyoshuske/4b7c3e92f2293bf2eb731ee399482057) (autor: kyoshuske).
